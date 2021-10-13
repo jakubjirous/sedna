@@ -1,0 +1,59 @@
+@import "variables";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-concrete;
+  font-size: 12px;
+
+  h1 {
+    font-weight: normal;
+    margin: 0 0 pxToRem(6) 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    height: $input-height;
+    border: 1px solid $color-iron;
+    border-radius: $border-radius;
+    outline: none;
+    padding: 0 pxToRem(8);
+  }
+
+  .button {
+    background-color: $color-primary;
+    color: $color-white;
+    height: $button-height;
+    border: 1px solid $color-primary;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      background-color: lighten($color-primary, 10%);
+    }
+
+    &:disabled, & .disabled {
+      background-color: $color-iron;
+      border: 1px solid $color-iron;
+      cursor: auto;
+
+      &:hover, &:focus {
+        background-color: $color-iron;
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}

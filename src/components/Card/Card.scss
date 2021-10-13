@@ -1,0 +1,83 @@
+@import "src/theme/variables";
+@import "src/theme/mixins";
+
+.card {
+  background-color: $color-mercury;
+  margin: pxToRem(16) 0;
+  padding: pxToRem(16);
+  border-radius: $border-radius;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card__caption {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  flex-basis: 100%;
+
+  h1 {
+    font-size: pxToRem(14);
+    padding-bottom: pxToRem(8);
+  }
+
+  p {
+    color: $color-corduroy;
+  }
+
+  @include lg {
+    flex-basis: calc(100% / 3);
+  }
+}
+
+.card__tags {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin: pxToRem(8) 0;
+
+  @include sm {
+    flex-basis: 100%;
+  }
+
+  @include md {
+    flex-basis: 50%;
+  }
+
+  @include lg {
+    flex-basis: calc(100% / 3);
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+
+.card__form {
+  flex-basis: 100%;
+  justify-content: flex-start;
+
+  @include sm {
+    flex-basis: 100%;
+  }
+
+  @include md {
+    flex-basis: 50%;
+  }
+
+  @include lg {
+    flex-basis: calc(100% / 3);
+  }
+}
+
+.card__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: pxToRem(100);
+  font-weight: bold;
+  font-size: 14px;
+}

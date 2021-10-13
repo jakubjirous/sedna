@@ -1,0 +1,31 @@
+@import "src/theme/variables";
+
+.tag {
+  background-color: $color-secondary;
+  color: $color-white;
+  border-radius: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: pxToRem(24);
+  padding: 0 pxToRem(8);
+  margin: pxToRem(4);
+
+  p {
+    line-height: pxToRem(12);
+    white-space: nowrap;
+  }
+}
+
+.tag__button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-left: pxToRem(8);
+}
+
+.tag__icon {
+  color: $color-white;
+}

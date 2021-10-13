@@ -1,0 +1,39 @@
+@import "src/theme/variables";
+@import "src/theme/mixins";
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  align-items: center;
+
+  @include sm {
+    flex-flow: row nowrap;
+  }
+
+  @include md {
+    margin-left: pxToRem(8);
+  }
+}
+
+.form__input {
+  width: 100%;
+
+  @include sm {
+    margin-right: pxToRem(16);
+  }
+}
+
+.form__button {
+  min-width: pxToRem(90);
+  margin: pxToRem(8) 0;
+
+  @include sm {
+    flex-flow: row nowrap;
+    margin: 0;
+  }
+}
+
+.form__button--disabled {
+  border-color: $color-iron;
+}

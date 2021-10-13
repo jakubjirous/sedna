@@ -1,0 +1,26 @@
+@import "src/theme/variables";
+@import "src/theme/mixins";
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter__control {
+    position: relative;
+}
+
+.filter__input {
+    min-width: pxToRem(200);
+    padding-left: pxToRem(32);
+    padding-right: pxToRem(8);
+}
+
+.filter__icon {
+    position: absolute;
+    left: pxToRem(10);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: $color-oslo;
+}

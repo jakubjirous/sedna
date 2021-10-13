@@ -1,0 +1,34 @@
+@import "functions";
+
+// main colors
+$color-primary: #2c6765;
+$color-secondary: #4a6fa9;
+//$color-tertiary: #;
+$color-black: #000000;
+$color-white: #ffffff;
+
+// background
+$color-concrete: #f3f3f3;
+
+// list background
+$color-mercury: #E8E8E8;
+
+// caption in list
+$color-corduroy: #636a6a;
+
+// border
+$color-iron: #c8cdd1;
+
+// icon
+$color-oslo: #80898f;
+
+$border-radius: 4px;
+
+$input-height: pxToRem(30);
+$button-height: pxToRem(32);
+
+// breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
