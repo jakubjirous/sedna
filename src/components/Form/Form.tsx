@@ -2,7 +2,6 @@ import React, { FC, useEffect, useState } from 'react';
 import { IUser } from '../../model/user';
 import './Form.scss';
 
-
 interface FormProps {
     user: IUser;
     onAddTag: (user: IUser, newTagName: string) => void;

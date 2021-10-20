@@ -5,7 +5,6 @@ import { ITag } from '../../model/tag';
 import { IUser } from '../../model/user';
 import './Tag.scss';
 
-
 interface TagProps {
     user: IUser,
     tag: ITag,

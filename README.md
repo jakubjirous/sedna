@@ -20,6 +20,11 @@
 - We expect candidates to spend around 3 hours on this. 
 - Please share your solution in a GitHub repo and invite [engineering@sedna.com](mailto:engineering@sedna.com) and [devops@sedna.com](mailto:devops@sedna.com) and let us know once you have submitted the assignment.
 
+**Mockup:**
+
+![Mockup Image](public/sedna-mockup.jpg)
+
+
 ### Solution
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app):
