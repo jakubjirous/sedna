@@ -1,6 +1,6 @@
 import { ITag } from "./tag";
 
-export interface IUser {
+export interface IMovie {
     id: string,
     name: string,
     created_at: string,

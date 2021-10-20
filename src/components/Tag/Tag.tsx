@@ -2,19 +2,19 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { FC } from 'react';
 import { ITag } from '../../model/tag';
-import { IUser } from '../../model/user';
+import { IMovie } from '../../model/movie';
 import './Tag.scss';
 
 interface TagProps {
-    user: IUser,
+    movie: IMovie,
     tag: ITag,
-    onDelete: (user: IUser, tagId: string) => void;
+    onDelete: (movie: IMovie, tagId: string) => void;
 }
 
-const Tag: FC<TagProps> = ({ user, tag, onDelete }) => {
+const Tag: FC<TagProps> = ({ movie, tag, onDelete }) => {
 
     const clickHandler = () => {
-        onDelete(user, tag.id);
+        onDelete(movie, tag.id);
     }
 
     return (

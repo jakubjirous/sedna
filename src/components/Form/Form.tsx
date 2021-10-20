@@ -1,13 +1,13 @@
 import React, { FC, useEffect, useState } from 'react';
-import { IUser } from '../../model/user';
+import { IMovie } from '../../model/movie';
 import './Form.scss';
 
 interface FormProps {
-    user: IUser;
-    onAddTag: (user: IUser, newTagName: string) => void;
+    movie: IMovie;
+    onAddTag: (movie: IMovie, newTagName: string) => void;
 }
 
-const Form: FC<FormProps> = ({ user, onAddTag }) => {
+const Form: FC<FormProps> = ({ movie, onAddTag }) => {
     const [disabled, setDisabled] = useState<boolean>(false);
     const [newTag, setNewTag] = useState<string>("");
 
@@ -21,14 +21,14 @@ const Form: FC<FormProps> = ({ user, onAddTag }) => {
 
     const addHandler = () => {
         if (newTag) {
-            onAddTag(user, newTag)
+            onAddTag(movie, newTag)
         }
         setNewTag("");
     }
 
     useEffect(() => {
-        setDisabled(user?.tags && user?.tags?.length >= 5 ? true : false);
-    }, [user])
+        setDisabled(movie?.tags && movie?.tags?.length >= 5 ? true : false);
+    }, [movie])
 
     return (
         <form className="form" onSubmit={submitHandler}>

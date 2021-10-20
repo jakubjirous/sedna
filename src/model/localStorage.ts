@@ -1,3 +1,3 @@
 export enum LocalStorage {
-    USERS = "users"
+    MOVIES = "movies"
 }
